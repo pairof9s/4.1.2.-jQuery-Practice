@@ -5810,36 +5810,84 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  background-color: #e5e5e5; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 .container {
   width: 320px;
   height: 414px;
-  border: 5px solid #444444;
   background-color: #444444;
+  border: 5px solid #444444;
   margin: 0 auto; }
-  .container ul {
-    list-style: none;
-    height: 40px;
-    vertical-align: middle; }
-  .container h2 {
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.box-on {
+  width: 310px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #a0c840; }
+  .box-on #sec-name {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #3d5800;
+    padding: 6px; }
+  .box-on #sec-icon {
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #3d5800;
+    padding: 10px 0 10px 10px; }
+  .box-on #sec-count {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #3d5800;
+    padding-left: 150px;
+    text-align: right; }
+
+.box-off {
+  width: 310px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #6a6c71;
+  border-top: 1px solid #999; }
+  .box-off #sec-name {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
     color: white;
+    padding: 6px; }
+  .box-off #sec-icon {
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px 0 10px 10px; }
+
+.nav-list {
+  width: 310px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #666; }
+  .nav-list li {
     font-size: 1em;
-    font-weight: 600; }
-  .container h3 {
-    color: #787878;
-    font-size: 1em;
-    font-weight: 400; }
-  .container ul.nav-list > li h2 {
-    background-color: #6c6e73; }
-    .container ul.nav-list > li h2:hover {
-      background-color: #a0c84a; }
-    .container ul.nav-list > li h2 li {
-      background-color: #e5e5e5;
-      border-bottom: 1px solid #999; }
-  .container .active {
-    height: 40px;
-    width: 320px;
-    background-color: #e5e5e5; }
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #787878; }
+  .nav-list #order {
+    font-size: .9em;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #999;
+    margin-left: -25px;
+    margin-right: 11px; }
 
 /*# sourceMappingURL=main.css.map */
