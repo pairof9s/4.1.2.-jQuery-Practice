@@ -1,39 +1,23 @@
 (function($){
   'use strict';
 
-  // $('dt').click(function(event){
-  //   var $clickedSection = $(this);
-  //   var $section = $('dd');
-  //
-  //   $sections.removeClass('active');
-  //   $clickedSection.next().addClass('active');
-  //
-  //   $('dd').not('.active').animate({
-  //     'height': 0
-  //   }, 500, function(){
-  //     $(this).hide();
-  //   });
-  //
-  //   $clickedSection.animate({
-  //     'height': 0
-  //   }, 500);
-  //
+  $('.content').hide();
+  $('.listelement').on('click', function(){
+    if(!($(this).children('.content').is(':visible'))){
+      $('.content').slideUp();
+      $(this).children('.content').slideDown();
+    } else {
+      $('.content').slideUp();
+    }
+  });
 
-    // $('.nav-list > li h2').click(function(event){
-    //   event.preventDefault();
-    //
-    //   var $section = $(this).parent();
-    //   var $subNav = $('ul.sub-nav');
-    //
-    //   /* First set the active on the item clicked */
-    //   $('.active').removeClass('active');
-    //   $section.find('ul.sub-nav').addClass('active');
-    //
-    //   $subNav.not('active').slideUp();
-    //   $('.active').slideDown();
-    // });
+$( "li.box-off" ).hover(function() {
+  $(this).css('background-color', "#A0C840");
+  $(this).css('background-color', "#6A6C71");
+});
 
-
-
+  // $(".box-off").mouseover(function(){
+  // 	$(this).css(backgroundColor: "#A0C840");
+  // });
 
 }(jQuery));

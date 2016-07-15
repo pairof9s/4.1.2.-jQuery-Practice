@@ -5810,16 +5810,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 .container {
   width: 320px;
   height: 414px;
   background-color: #444444;
   border: 5px solid #444444;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
 
 ul {
   list-style: none; }
@@ -5828,10 +5827,10 @@ a {
   text-decoration: none; }
 
 .box-on {
-  width: 310px;
   height: 40px;
   line-height: 40px;
-  background-color: #a0c840; }
+  background-color: #a0c840;
+  margin: 0; }
   .box-on #sec-name {
     font-size: 1em;
     font-weight: 600;
@@ -5845,19 +5844,21 @@ a {
     color: #3d5800;
     padding: 10px 0 10px 10px; }
   .box-on #sec-count {
+    display: inline;
+    border-radius: 26px/18px;
     font-size: 1em;
     font-weight: 600;
     font-family: sans-serif;
-    color: #3d5800;
-    padding-left: 150px;
-    text-align: right; }
+    color: #fafafa;
+    text-align: center;
+    padding-left: 130px; }
 
 .box-off {
-  width: 310px;
   height: 40px;
   line-height: 40px;
   background-color: #6a6c71;
-  border-top: 1px solid #999; }
+  border-top: 1px solid #999;
+  margin: 0; }
   .box-off #sec-name {
     font-size: 1em;
     font-weight: 600;
@@ -5870,10 +5871,18 @@ a {
     font-family: sans-serif;
     color: white;
     padding: 10px 0 10px 10px; }
+  .box-off #sec-count {
+    display: inline;
+    border-radius: 26px/18px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #fafafa;
+    text-align: center;
+    padding-right: 10px; }
 
 .nav-list {
-  width: 310px;
-  height: 40px;
+  height: auto;
   line-height: 40px;
   background-color: #e5e5e5;
   border-bottom: 1px solid #666; }
