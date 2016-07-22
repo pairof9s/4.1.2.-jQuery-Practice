@@ -5812,6 +5812,12 @@ button.close {
 body {
   box-sizing: border-box; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .container {
   width: 320px;
   height: 414px;
@@ -5820,11 +5826,9 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-ul {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
+.listelement {
+  height: 100%;
+  background-color: #e5e5e5; }
 
 .badge {
   color: #fafafa; }
@@ -5834,8 +5838,9 @@ a {
   background-color: #fafafa; }
 
 .list-group-item {
-  background-color: #a0c840;
-  border: 0; }
+  border: 0;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important; }
   .list-group-item #sec-name {
     font-size: 1em;
     font-weight: 600;
@@ -5854,6 +5859,12 @@ a {
     color: white;
     margin-right: 6px; }
 
+.list-item-on {
+  background-color: #a0c840; }
+
+.list-item-off {
+  background-color: #e5e5e5; }
+
 #list-off {
   background-color: #6a6c71;
   border-top: 1px solid #888; }
@@ -5865,7 +5876,6 @@ a {
 
 .nav-list {
   height: auto;
-  line-height: 40px;
   background-color: #e5e5e5;
   border-bottom: 1px solid #666; }
   .nav-list li {
@@ -5878,7 +5888,10 @@ a {
     font-weight: 500;
     font-family: sans-serif;
     color: #999;
-    margin-left: -25px;
     margin-right: 11px; }
+  .nav-list #nav-badge {
+    color: #787878;
+    border: 1px solid #b9b9b9;
+    background-color: #e5e5e5; }
 
 /*# sourceMappingURL=main.css.map */
